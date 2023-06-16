@@ -12,9 +12,16 @@
         <p id="demo">JavaScript Can Change HTML Content</p>
         <button type="button" onclick="changeContent()">change content</button>
     </div>
+    <div>
+        <h2 id="demo1">JavaScript Can Change Color</h2>
+        <button type="button" onclick="changeColor()">change color</button>
+    </div>
     <script>
         function changeContent(){
             document.getElementById("demo").innerHTML = "The Content changed Successfully!" ;
+        }
+        function changeColor(){
+            document.getElementById("demo1").style.color = "green" ;
         }
     </script>
 </body>
