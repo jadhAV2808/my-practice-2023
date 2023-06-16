@@ -16,12 +16,19 @@
         <h2 id="demo1">JavaScript Can Change Color</h2>
         <button type="button" onclick="changeColor()">change color</button>
     </div>
+    <div>
+        <h2 id="demo3">You can Hide me</h2>
+        <button type="button" onclick="hideMe()">hide me</button>
+    </div>
     <script>
         function changeContent(){
             document.getElementById("demo").innerHTML = "The Content changed Successfully!" ;
         }
         function changeColor(){
             document.getElementById("demo1").style.color = "green" ;
+        }
+        function hideMe(){
+            document.getElementById("demo1").style.display="none" ;
         }
     </script>
 </body>
